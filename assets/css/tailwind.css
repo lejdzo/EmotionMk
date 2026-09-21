@@ -1,0 +1,167 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body, #__nuxt {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+@theme {
+  --color-logoblue : #04adcd;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+box-sizing: border-box;
+}
+
+img {
+  max-inline-size: 100%;
+}
+/* body {
+  @apply h-screen w-screen;
+} */
+
+
+/* LOADING SCREEN */
+.loading-screen {
+  @apply fixed z-50 w-full h-full grid place-items-center bg-slate-900;
+  /* animation: fadeOutLoading 2s ease-in-out forwards; */
+}
+
+
+.loading-screen img {
+  @apply h-96 w-96;
+  object-fit: contain;
+}
+
+
+
+.logo2 {
+  @apply animate-pulse p-1;
+}
+
+/* .logo2 {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1s forwards;
+} */
+
+.hr-class {
+  @apply mx-5 border-0 h-px bg-[var(--color-logoblue)]/60
+}
+
+
+@keyframes fadeOut {
+    0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+    0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes AnimateLogo {
+    0% {
+    opacity:100; 
+    scale:110;
+  }
+  100% {
+    opacity: 95; 
+    scale: 100;
+  }
+}
+
+
+@keyframes fadeOutLoading {
+    0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* MAIN PAGE */
+
+/* MAIN PAGE - NAVBAR */
+.navbar {
+  @apply h-32 flex justify-between p-3 bg-slate-900 place-items-center;
+}
+
+.navbar h1 {
+  @apply font-poppins font-extrabold text-4xl md:text-4xl lg:text-5xl text-white uppercase leading-none hover:text-[var(--color-logoblue)];
+}
+
+.logo {
+  @apply h-20 w-20;
+  animation: spin 3s linear infinite;
+}
+
+
+
+.hamMenu {
+  @apply w-20 h-20 p-2;
+}
+
+
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* 
+INDEX PAGE */
+
+/* PRODUCTS PAGE */
+.product-menu-card {
+  @apply block rounded-2xl transition-all duration-200 ease-out;
+}
+
+.product-menu-card:hover {
+  transform: translateY(-4px) scale(1.015);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(4, 173, 205, 0.25),
+    0 0 22px rgba(4, 173, 205, 0.12);
+}
+
+.product-menu-card:active {
+  transform: translateY(-1px) scale(1.005);
+}
+
+.product-menu-card:focus-visible {
+  outline: none;
+  transform: translateY(-4px) scale(1.015);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    0 0 0 2px rgba(4, 173, 205, 0.45),
+    0 0 24px rgba(4, 173, 205, 0.18);
+}
