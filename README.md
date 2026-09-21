@@ -1,75 +1,61 @@
-# Nuxt Minimal Starter
+# E-MOTION MK
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+E-MOTION MK is a personal full-stack web application for presenting electric scooters, managing products and content, and allowing users to book test rides.
 
-## Setup
+The project was created as a personal software development project to practice full-stack development, database integration, authentication, REST APIs and deployment.
 
-Make sure to install dependencies:
+## Live Demo
 
-```bash
-# npm
-npm install
+http://178.170.13.19:9000
 
-# pnpm
-pnpm install
+## Features
 
-# yarn
-yarn install
+- Electric scooter product catalogue
+- Individual product pages
+- Test ride booking
+- Gallery
+- Contact form
+- Macedonian and English language support
+- Admin authentication
+- Admin dashboard
+- Product management
+- Gallery management
+- Homepage content management
+- Promotions management
+- Image uploads
+- Email notifications
+- MongoDB data storage
 
-# bun
-bun install
-```
+## Technologies
 
-## Development Server
+### Frontend
+- Nuxt
+- Vue.js
+- TypeScript / JavaScript
+- Nuxt UI
+- CSS
 
-Start the development server on `http://localhost:3000`:
+### Backend
+- Nuxt Server API
+- REST APIs
+- Node.js
+- MongoDB
+- Argon2 password hashing
+- Session-based authentication
+- Nodemailer
 
-```bash
-# npm
-npm run dev
+### Deployment
+- Linux
+- Apache
+- PM2
+- Reverse Proxy
 
-# pnpm
-pnpm dev
+## Project Structure
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+```text
+pages/          Frontend pages
+components/     Reusable Vue components
+server/api/     REST API endpoints
+server/utils/   Database, authentication and utility functions
+middleware/     Route protection
+public/         Static assets
