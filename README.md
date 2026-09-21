@@ -59,3 +59,5 @@ server/api/     REST API endpoints
 server/utils/   Database, authentication and utility functions
 middleware/     Route protection
 public/         Static assets
+
+```
